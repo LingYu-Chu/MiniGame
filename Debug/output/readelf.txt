@@ -1,0 +1,223 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           Andes Whitiger
+  Version:                           0x1
+  Entry point address:               0x348
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          108752 (bytes into file)
+  Flags:                             0x20014241, AABI, Andes ELF V1.3.1, Andes Star v2.0, PERF1, 16b, 16REG
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         3
+  Size of section headers:           40 (bytes)
+  Number of section headers:         24
+  Section header string table index: 21
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .nds32_init       PROGBITS        00000000 001000 000348 00  AX  0   0  8
+  [ 2] .text             PROGBITS        00000348 001348 002738 00  AX  0   0  4
+  [ 3] .rodata           PROGBITS        00002a80 003a80 000078 00   A  0   0  4
+  [ 4] .data             PROGBITS        00100000 004000 000518 00  WA  0   0  8
+  [ 5] .sdata_w          PROGBITS        00100518 004518 000008 00  WA  0   0  4
+  [ 6] .sdata_b          PROGBITS        00100520 004520 000003 00  WA  0   0  1
+  [ 7] .sbss_b           NOBITS          00100523 004523 00000d 00  WA  0   0  1
+  [ 8] .sbss_w           NOBITS          00100530 004523 00002c 00  WA  0   0  4
+  [ 9] .bss              NOBITS          0010055c 004523 000008 00  WA  0   0  4
+  [10] .comment          PROGBITS        00000000 004523 0000c8 00      0   0  1
+  [11] .debug_aranges    PROGBITS        00000000 0045f0 0000e8 00      0   0  8
+  [12] .debug_pubnames   PROGBITS        00000000 0046d8 0003cd 00      0   0  1
+  [13] .debug_info       PROGBITS        00000000 004aa5 001121 00      0   0  1
+  [14] .debug_abbrev     PROGBITS        00000000 005bc6 0004c4 00      0   0  1
+  [15] .debug_line       PROGBITS        00000000 00608a 00098d 00      0   0  1
+  [16] .debug_frame      PROGBITS        00000000 006a18 0005c8 00      0   0  4
+  [17] .debug_str        PROGBITS        00000000 006fe0 000a37 01  MS  0   0  1
+  [18] .debug_loc        PROGBITS        00000000 007a17 0007ba 00      0   0  1
+  [19] .debug_macinfo    PROGBITS        00000000 0081d1 0125ed 00      0   0  1
+  [20] .debug_ranges     PROGBITS        00000000 01a7c0 000020 00      0   0  8
+  [21] .shstrtab         STRTAB          00000000 01a7e0 0000f0 00      0   0  1
+  [22] .symtab           SYMTAB          00000000 01ac90 000930 10     23  46  4
+  [23] .strtab           STRTAB          00000000 01b5c0 0004ce 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings)
+  I (info), L (link order), G (group), x (unknown)
+  O (extra OS processing required) o (OS specific), p (processor specific)
+
+There are no section groups in this file.
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  LOAD           0x001000 0x00000000 0x00000000 0x02af8 0x02af8 R E 0x1000
+  LOAD           0x004000 0x00100000 0x00002af8 0x00523 0x00523 RW  0x1000
+  LOAD           0x004523 0x00100523 0x00100523 0x00000 0x00041 RW  0x1000
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .nds32_init .text .rodata 
+   01     .data .sdata_w .sdata_b 
+   02     .sbss_b .sbss_w .bss 
+
+There is no dynamic section in this file.
+
+There are no relocations in this file.
+
+There are no unwind sections in this file.
+
+Symbol table '.symtab' contains 147 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000000     0 SECTION LOCAL  DEFAULT    1 
+     2: 00000348     0 SECTION LOCAL  DEFAULT    2 
+     3: 00002a80     0 SECTION LOCAL  DEFAULT    3 
+     4: 00100000     0 SECTION LOCAL  DEFAULT    4 
+     5: 00100518     0 SECTION LOCAL  DEFAULT    5 
+     6: 00100520     0 SECTION LOCAL  DEFAULT    6 
+     7: 00100523     0 SECTION LOCAL  DEFAULT    7 
+     8: 00100530     0 SECTION LOCAL  DEFAULT    8 
+     9: 0010055c     0 SECTION LOCAL  DEFAULT    9 
+    10: 00000000     0 SECTION LOCAL  DEFAULT   10 
+    11: 00000000     0 SECTION LOCAL  DEFAULT   11 
+    12: 00000000     0 SECTION LOCAL  DEFAULT   12 
+    13: 00000000     0 SECTION LOCAL  DEFAULT   13 
+    14: 00000000     0 SECTION LOCAL  DEFAULT   14 
+    15: 00000000     0 SECTION LOCAL  DEFAULT   15 
+    16: 00000000     0 SECTION LOCAL  DEFAULT   16 
+    17: 00000000     0 SECTION LOCAL  DEFAULT   17 
+    18: 00000000     0 SECTION LOCAL  DEFAULT   18 
+    19: 00000000     0 SECTION LOCAL  DEFAULT   19 
+    20: 00000000     0 SECTION LOCAL  DEFAULT   20 
+    21: 00000000     0 FILE    LOCAL  DEFAULT  ABS crt0.S
+    22: 00000000     0 NOTYPE  LOCAL  DEFAULT    1 exception_vector
+    23: 00000064     0 NOTYPE  LOCAL  DEFAULT    1 OS_Trap_TLB_Fill
+    24: 00000064     0 NOTYPE  LOCAL  DEFAULT    1 OS_Trap_PTE_Not_Present
+    25: 00000064     0 NOTYPE  LOCAL  DEFAULT    1 OS_Trap_TLB_Misc
+    26: 00000064     0 NOTYPE  LOCAL  DEFAULT    1 OS_Trap_TLB_VLPT_Miss
+    27: 000000a6     0 NOTYPE  LOCAL  DEFAULT    1 OS_Trap_Machine_Error
+    28: 000000ea     0 NOTYPE  LOCAL  DEFAULT    1 OS_Trap_Debug_Related
+    29: 0000012e     0 NOTYPE  LOCAL  DEFAULT    1 OS_Trap_General_Exception
+    30: 00000172     0 NOTYPE  LOCAL  DEFAULT    1 OS_Trap_Syscall
+    31: 000001e0     0 NOTYPE  LOCAL  DEFAULT    1 OS_Trap_Interrupt_HW0
+    32: 000002b6     0 NOTYPE  LOCAL  DEFAULT    1 OS_Trap_Interrupt_HW1
+    33: 000002be     0 NOTYPE  LOCAL  DEFAULT    1 OS_Trap_Interrupt_HW2
+    34: 000002c6     0 NOTYPE  LOCAL  DEFAULT    1 OS_Trap_Interrupt_HW3
+    35: 000002ce     0 NOTYPE  LOCAL  DEFAULT    1 OS_Trap_Interrupt_HW4
+    36: 000002d6     0 NOTYPE  LOCAL  DEFAULT    1 OS_Trap_Interrupt_HW5
+    37: 000002de     0 NOTYPE  LOCAL  DEFAULT    1 OS_Trap_SWI
+    38: 00000040     0 NOTYPE  LOCAL  DEFAULT    1 exception_vector_end
+    39: 00000040     0 NOTYPE  LOCAL  DEFAULT    1 exception_handler
+    40: 0000004c     0 NOTYPE  LOCAL  DEFAULT    1 ISR_TABLE
+    41: 00000218     0 NOTYPE  LOCAL  DEFAULT    1 common_ISR_wrapper
+    42: 00000354     0 NOTYPE  LOCAL  DEFAULT    2 delay_loop
+    43: 00000568   252 FUNC    LOCAL  DEFAULT    2 Default_Handler
+    44: 00100534     4 OBJECT  LOCAL  DEFAULT    8 cnt.1450
+    45: 001000f0  1064 OBJECT  LOCAL  DEFAULT    4 impure_data
+    46: 00001c98   434 FUNC    GLOBAL DEFAULT    2 TIMER
+    47: 00000568   252 FUNC    WEAK   DEFAULT    2 HW2_ISR
+    48: 00000e84   162 FUNC    GLOBAL DEFAULT    2 timer_delay
+    49: 00000f7c    66 FUNC    GLOBAL DEFAULT    2 delay1
+    50: 0010052b     1 OBJECT  GLOBAL DEFAULT    7 b
+    51: 00100558     4 OBJECT  GLOBAL DEFAULT    8 p
+    52: 00100548     4 OBJECT  GLOBAL DEFAULT    8 j
+    53: 00000c90   122 FUNC    GLOBAL DEFAULT    2 WriteIns
+    54: 00100538     4 OBJECT  GLOBAL DEFAULT    8 x
+    55: 00001564   234 FUNC    GLOBAL DEFAULT    2 monster
+    56: 0010055c     4 OBJECT  GLOBAL DEFAULT    9 now
+    57: 00000568   252 FUNC    WEAK   DEFAULT    2 tlb_exception_handler
+    58: 00100544     4 OBJECT  GLOBAL DEFAULT    8 n
+    59: 00000974   308 FUNC    GLOBAL DEFAULT    2 HW1_ISR
+    60: 000007f0    28 FUNC    GLOBAL DEFAULT    2 initIntr
+    61: 0000080c    44 FUNC    GLOBAL DEFAULT    2 clear_swi
+    62: 0010052f     1 OBJECT  GLOBAL DEFAULT    7 p2
+    63: 00000e04    64 FUNC    GLOBAL DEFAULT    2 note_translate
+    64: 000029b0    50 FUNC    GLOBAL DEFAULT    2 memcpy
+    65: 0010052d     1 OBJECT  GLOBAL DEFAULT    7 K
+    66: 00000acc    28 FUNC    GLOBAL DEFAULT    2 GIE_ENABLE
+    67: 001000c8    40 OBJECT  GLOBAL DEFAULT    4 lose
+    68: 00000fc0   344 FUNC    GLOBAL DEFAULT    2 KeyScan
+    69: 00100554     4 OBJECT  GLOBAL DEFAULT    8 o
+    70: 00001a40   142 FUNC    GLOBAL DEFAULT    2 sum
+    71: 00000b04    60 FUNC    GLOBAL DEFAULT    2 gen_swi
+    72: 00100523     1 OBJECT  GLOBAL DEFAULT    7 input
+    73: 0010009c    26 OBJECT  GLOBAL DEFAULT    4 song
+    74: 00001340   548 FUNC    GLOBAL DEFAULT    2 show1
+    75: 000003b8    66 FUNC    GLOBAL DEFAULT    2 delay2
+    76: 000006f8    92 FUNC    GLOBAL DEFAULT    2 __cpu_init
+    77: 00000568   252 FUNC    WEAK   DEFAULT    2 HW5_ISR
+    78: 00100550     4 OBJECT  GLOBAL DEFAULT    8 l
+    79: 00000568   252 FUNC    WEAK   DEFAULT    2 HW4_ISR
+    80: 00100526     1 OBJECT  GLOBAL DEFAULT    7 temp
+    81: 00002af0     4 OBJECT  GLOBAL DEFAULT    3 _global_impure_ptr
+    82: 00100560     4 OBJECT  GLOBAL DEFAULT    9 display
+    83: 00000c10   126 FUNC    GLOBAL DEFAULT    2 WriteData
+    84: 00000b40   206 FUNC    GLOBAL DEFAULT    2 CheckBusy
+    85: 0000211c    40 FUNC    GLOBAL DEFAULT    2 IntInitial
+    86: 00100518     4 OBJECT  GLOBAL DEFAULT    5 g_nIntCount
+    87: 00000754    38 FUNC    GLOBAL DEFAULT    2 __init
+    88: 0010052e     1 OBJECT  GLOBAL DEFAULT    7 p1
+    89: 00100521     1 OBJECT  GLOBAL DEFAULT    6 score
+    90: 00002144    68 FUNC    GLOBAL DEFAULT    2 clear
+    91: 00001f74   238 FUNC    GLOBAL DEFAULT    2 music
+    92: 00000000     0 NOTYPE  WEAK   DEFAULT  UND _FP_BASE_
+    93: 00100525     1 OBJECT  GLOBAL DEFAULT    7 beat
+    94: 00100540     4 OBJECT  GLOBAL DEFAULT    8 i
+    95: 00001e4c   296 FUNC    GLOBAL DEFAULT    2 TIMER1
+    96: 00100080    26 OBJECT  GLOBAL DEFAULT    4 win
+    97: 00000348   110 FUNC    GLOBAL DEFAULT    2 _start
+    98: 00000dc8    60 FUNC    GLOBAL DEFAULT    2 InitialLCD
+    99: 00002a2c    82 FUNC    GLOBAL DEFAULT    2 rand
+   100: 00100528     0 OBJECT  WEAK   DEFAULT    5 _SDA_BASE_
+   101: 00000664    20 FUNC    GLOBAL DEFAULT    2 __null_function
+   102: 00100522     1 OBJECT  GLOBAL DEFAULT    6 score2
+   103: 00000ae8    28 FUNC    GLOBAL DEFAULT    2 GIE_DISABLE
+   104: 00000880   242 FUNC    GLOBAL DEFAULT    2 HW0_ISR
+   105: 0010052c     1 OBJECT  GLOBAL DEFAULT    7 c
+   106: 00002064   184 FUNC    GLOBAL DEFAULT    2 Timer0_Initial
+   107: 001000b8    13 OBJECT  GLOBAL DEFAULT    4 begin
+   108: 00000f28    84 FUNC    GLOBAL DEFAULT    2 timer_initialize
+   109: 00000568   252 FUNC    WEAK   DEFAULT    2 error_exception_handler
+   110: 00100564     0 NOTYPE  GLOBAL DEFAULT  ABS _lmaend
+   111: 00001b60   154 FUNC    GLOBAL DEFAULT    2 num
+   112: 00100523     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
+   113: 000029e4    52 FUNC    GLOBAL DEFAULT    2 memset
+   114: 00002188  2088 FUNC    GLOBAL DEFAULT    2 main
+   115: 00001ad0   142 FUNC    GLOBAL DEFAULT    2 sum1
+   116: 0000077c    20 FUNC    GLOBAL DEFAULT    2 __mem_pre_c_init
+   117: 00002a18    20 FUNC    GLOBAL DEFAULT    2 srand
+   118: 00000d0c    78 FUNC    GLOBAL DEFAULT    2 WriteString
+   119: 0010053c     4 OBJECT  GLOBAL DEFAULT    8 y
+   120: 00000568   252 FUNC    WEAK   DEFAULT    2 HW3_ISR
+   121: 00100524     1 OBJECT  GLOBAL DEFAULT    7 key
+   122: 00100000   128 OBJECT  GLOBAL DEFAULT    4 note
+   123: 0010051c     4 OBJECT  GLOBAL DEFAULT    5 _impure_ptr
+   124: 00100530     4 OBJECT  GLOBAL DEFAULT    8 trigger
+   125: 00001bfc   154 FUNC    GLOBAL DEFAULT    2 num1
+   126: 00000aa8    36 FUNC    GLOBAL DEFAULT    2 SW0_ISR
+   127: 00001740   768 FUNC    GLOBAL DEFAULT    2 SCORE
+   128: 00100529     1 OBJECT  GLOBAL DEFAULT    7 px
+   129: 00001118   552 FUNC    GLOBAL DEFAULT    2 show
+   130: 00000d5c   106 FUNC    GLOBAL DEFAULT    2 gotoxy
+   131: 00002af8     0 NOTYPE  GLOBAL DEFAULT  ABS __data_lmastart
+   132: 00100523     0 NOTYPE  GLOBAL DEFAULT  ABS _edata
+   133: 00001650   238 FUNC    GLOBAL DEFAULT    2 site
+   134: 00100564     0 NOTYPE  GLOBAL DEFAULT  ABS _end
+   135: 00000e44    64 FUNC    GLOBAL DEFAULT    2 PWM_Initial
+   136: 00000678   128 FUNC    GLOBAL DEFAULT    2 __c_init
+   137: 0010052a     1 OBJECT  GLOBAL DEFAULT    7 a
+   138: 00100520     1 OBJECT  GLOBAL DEFAULT    6 Key
+   139: 00000838    72 FUNC    GLOBAL DEFAULT    2 syscall_handler
+   140: 00100527     1 OBJECT  GLOBAL DEFAULT    7 operator
+   141: 00000790    96 FUNC    GLOBAL DEFAULT    2 __soc_init
+   142: 00102000     0 NOTYPE  GLOBAL DEFAULT  ABS _stack
+   143: 0010054c     4 OBJECT  GLOBAL DEFAULT    8 u
+   144: 00100000     0 NOTYPE  GLOBAL DEFAULT    4 __data_start
+   145: 000003fc   362 FUNC    GLOBAL DEFAULT    2 gotkey
+   146: 00100528     1 OBJECT  GLOBAL DEFAULT    7 X
+
+No version information found in this file.
